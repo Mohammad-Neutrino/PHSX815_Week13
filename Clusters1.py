@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 
 
-data = pd.DataFrame(np.random.rand(500, 2), columns = ["Random1", "Random2"])
+data = pd.DataFrame(np.random.randn(1000, 2), columns = ["Random1", "Random2"])
 X = data[["Random1", "Random2"]]
 plt.scatter(X["Random1"], X["Random2"], c = 'black', s = 4)
 plt.xlabel('Random Numbers 1')
